@@ -1,0 +1,272 @@
+﻿sayGreeting,hi
+sayGreeting,hello
+sayGreeting,what’s up
+sayGreeting,what is up
+sayGreeting,how are you
+sayGreeting,how’s it going
+sayGreeting,good morning
+sayGreeting,good afternoon
+sayGreeting,good evening
+sayGreeting,hey
+sayGreeting,hey there
+sayGreeting,hi there
+sayGreeting,yo
+sayGreeting,sup
+sayGreeting,greetings
+sayGreeting,hello there
+sayGreeting,what’s good
+sayGreeting,wassup
+showGratitude,thank you man
+showGratitude,thank you!
+showGratitude,thank you mate
+showGratitude,thank you
+showGratitude,thanks
+showGratitude,appreciate it
+showGratitude,appreciate you
+showGratitude,much appreciated
+showGratitude,i appreciate it
+showGratitude,i appreciate you
+showGratitude,thank you very much
+showGratitude,thanks a lot
+showGratitude,gratitude
+showGratitude,thanks so much
+showGratitude,many thanks
+showGratitude,thanks for your help
+showGratitude,thanks for that
+showGratitude,thanks very much
+showGratitude,thank you so much
+showGratitude,ty
+showGratitude,ty very much
+showGratitude,ty man
+sayBye,bye
+sayBye,goodbye
+sayBye,see ya
+sayBye,see you later
+sayBye,catch you later
+sayBye,bye bye
+sayBye,talk to you later
+sayBye,have a good day
+sayBye,later
+sayBye,cheers
+sayBye,have a nice day
+requestHelp,help
+requestHelp,can you help me
+requestHelp,i need some help
+requestHelp,what can i ask you
+requestHelp,what can you help me with
+requestHelp,how can you help me
+requestHelp,what do i ask you
+requestHelp,what can you do for me
+requestHelp,how can you assist me
+requestHelp,can you assist me
+requestHelp,could you help me
+searchProperties,show me apartments with air conditioning in new york  
+searchProperties,find me a villa with parking in berlin  
+searchProperties,are there any houses with wi-fi in tokyo for under 200 pounds a night  
+searchProperties,do you have apartments with air conditioning in chicago  
+searchProperties,show me places with parking in casablanca from june 10 to june 15  
+searchProperties,looking for a villa in munich with wi-fi under 550 pounds per night  
+searchProperties,find houses in granada with a pool between july 1 and july 7  
+searchProperties,show me apartments in dallas that are pet friendly  
+searchProperties,do you have villas with wi-fi in osaka for 500 to 650 per night  
+searchProperties,find houses with a pool in new york from 20-25 january
+searchProperties,looking for apartments in tokyo with parking available from september 1-8
+searchProperties,show me villas in sydney with wi-fi and pet friendly options  
+searchProperties,show me places with wi-fi in istanbul under 170 pounds per night  
+searchProperties,find villas in dallas that are pet friendly and have parking  
+searchProperties,are there houses in edinburgh with air conditioning available july 10 to july 15  
+searchProperties,looking for apartments in sydney with wi-fi and parking  
+searchProperties,show me villas in munich with a pool and price under 200 per night  
+searchProperties,show me places in tokyo  
+searchProperties,any apartments available in munich from july 10-14
+searchProperties,need a villa with a pool in osaka  
+searchProperties,something pet friendly in chicago  
+searchProperties,places in london with wi-fi  
+searchProperties,house in granada from october 10 to november 1
+searchProperties,can i see something in ankara with aircon  
+searchProperties,show me listings in sydney  
+searchProperties,search for properties in istanbul with parking  
+searchProperties,looking for a house in dallas  
+searchProperties,are there any places in cordoba from aug 10 to sep 2
+searchProperties,with pool in melbourne  
+searchProperties,apartment in casablanca  
+searchProperties,great stay only  
+searchProperties,disappointing ratings  
+searchProperties,pet friendly only  
+searchProperties,in new york  
+searchProperties,with air conditioning  
+searchProperties,need something with wi-fi and pool  
+searchProperties,villa in tokyo with great stay  
+searchProperties,looking for a place in london with moderate policy  
+searchProperties,cheap places in chicago  
+searchProperties,looking for properties under 100 in istanbul  
+searchProperties,need something in osaka with pet friendly and aircon  
+searchProperties,apartment with wi-fi and pool in granada  
+searchProperties,house from 2 july to 9 july in berlin  
+searchProperties,places in edinburgh with below average rating  
+searchProperties,something in munich with decent stay  
+searchProperties,need a flexible booking in ankara  
+searchProperties,want a house in chicago with air conditioning  
+searchProperties,are there villas in new york with a pool  
+searchProperties,find me a pet friendly apartment in cordoba  
+searchProperties,with parking in istanbul  
+searchProperties,something in phoenix  
+searchProperties,booking policy should be flexible 
+searchProperties,is there anything in granada from june 6
+searchProperties,need a pool and free parking in chicago  
+searchProperties,any listings in london for 10 july  
+searchProperties,property in tokyo with wi-fi  
+searchProperties,find a place with wi-fi in dallas  
+searchProperties,available apartments in casablanca from 15 june  
+searchProperties,in tokyo  
+searchProperties,in berlin  
+searchProperties,in munich  
+searchProperties,in osaka  
+searchProperties,in chicago  
+searchProperties,in london  
+searchProperties,in granada  
+searchProperties,in sydney  
+searchProperties,in phoenix  
+searchProperties,in istanbul  
+searchProperties,in dallas  
+searchProperties,in edinburgh  
+searchProperties,in casablanca  
+searchProperties,in ankara  
+searchProperties,in melbourne  
+searchProperties,from 3-5 june  
+searchProperties,from may 4-6
+searchProperties,from february 25 to march 3 
+searchProperties,from april 10-12  
+searchProperties,16-18 february
+searchProperties,30 june  to 4 july
+searchProperties,with wifi  
+searchProperties,with a pool  
+searchProperties,with free parking  
+searchProperties,with aircon  
+searchProperties,pet friendly  
+searchProperties,a villa  
+searchProperties,an apartment  
+searchProperties,house  
+searchProperties,cabin  
+searchProperties,flexible booking policy  
+searchProperties,with moderate booking policy  
+searchProperties,strict booking policy  
+searchProperties,great stay  
+searchProperties,decent stay  
+searchProperties,disappointing  
+searchProperties,below average  
+searchProperties,between 200 and 400 a night
+searchProperties,under 150  
+searchProperties,from 100 to 200  
+searchProperties,under 150  
+searchProperties,looking for a place  
+searchProperties,show me rentals  
+searchProperties,any availability  
+searchProperties,available listings  
+searchProperties,need a place  
+searchProperties,can you find apartments  
+searchProperties,search for villas  
+searchProperties,any houses  
+searchProperties,need a pet friendly place  
+searchProperties,looking for places with air conditioning  
+searchProperties,show me places with pool in munich  
+searchProperties,need a place with flexible booking in london  
+searchProperties,find me something under 150 in chicago  
+searchProperties,looking for availability from 12-15 june in osaka  
+searchProperties,show me cabins in seattle  
+searchProperties,any pet friendly cabins available in seattle  
+searchProperties,looking for a cabin with a pool in seattle  
+searchProperties,find me a cabin in seattle from july 20 to august 1  
+searchProperties,are there any cabins in seattle from the 1-15 august
+searchProperties,i need a cabin in seattle with wi-fi  
+searchProperties,show seattle cabins under 150  
+searchProperties,cabins in seattle between 100 and 200 per night  
+searchProperties,are there any great stay cabins in seattle  
+searchProperties,seattle cabin with flexible booking policy  
+searchProperties,looking for a villa in granada 4-6 august  
+searchProperties,apartment with pool in munich 10-12 july  
+searchProperties,need a house in cordoba with wi-fi from 6-8 september  
+searchProperties,london apartment 3-5 august with strict policy  
+searchProperties,apartment in casablanca 5-7 august under 200 pounds  
+searchProperties,berlin apartment 2-4 september with guest rating decent stay  
+searchProperties,melbourne villa 12-14 august with aircon  
+searchProperties,tokyo house 7-9 august with great stay rating  
+searchProperties,december 1-4
+searchProperties,from october 12-15
+searchProperties,1-4 september
+getInformation,list all the locations you have
+getInformation,list all the locations
+getInformation,list all locations
+getInformation,list all the cities you have
+getInformation,list all the cities
+getInformation,list all cities
+getInformation,show me all your locations
+getInformation,show me all cities
+getInformation,can I see all the cities you have
+getInformation,can I see all your cities
+getInformation,"the cities, can I see them all"
+getInformation,"the locations, can you show me them all"
+getInformation,what locations are there
+getInformation,what locations can I choose from
+getInformation,i want to see all cities
+getInformation,list all the amenities you have
+getInformation,list all the amenities
+getInformation,list all amenities
+getInformation,show me all your amenities
+getInformation,show me all amenities
+getInformation,can I see all the amenities you have
+getInformation,can I see all your amenities
+getInformation,"the amenities, can I see them all"
+getInformation,"the amenities, can you show me them all"
+getInformation,what amenities are there
+getInformation,what amenities can I choose from
+getInformation,i want to see all amenities
+getInformation,list all the guest ratings you have  
+getInformation,show me all guest reviews  
+getInformation,can I see all the guest ratings  
+getInformation,what guest ratings are there  
+getInformation,i want to see all guest ratings  
+getInformation,list all the booking policies  
+getInformation,show me all booking policies you have  
+getInformation,can I see the booking rules  
+getInformation,what booking policies are there  
+getInformation,"the booking options, can you show me them all  "
+getInformation,i want to see all booking policies  
+getInformation,list all the hosts  
+getInformation,show me all your hosts  
+getInformation,can I see all the hosts you have  
+getInformation,what hosts can I choose from  
+getInformation,"the hosts, can you show me them  "
+getInformation,i want to see all hosts  
+getInformation,list all property types  
+getInformation,show me all types of places  
+getInformation,can I see all property types  
+getInformation,what kinds of properties are there  
+getInformation,"the property types, can you show me them  "
+getInformation,i want to see all types of properties  
+showGratitude,"thank you, bye"
+showGratitude,"thanks, see ya"
+showGratitude,"thanks, bye"
+showGratitude,thank you and bye
+showGratitude,"thanks a lot, see you next time"
+showGratitude,"thank you very much, bye bye"
+showGratitude,"ty, bye"
+showGratitude,thanks! Bye now
+showGratitude,"thank you, goodbye"
+searchProperties,show me properties that have aircon
+searchProperties,can I see places that are rated as outstanding
+searchProperties,I want to see houses that have a flexible booking policy
+searchProperties,I'm looking for something that has wifi
+searchProperties,I need something that has a pool and is pet friendly
+searchProperties,is there anything available from june 1-2
+searchProperties,I'm looking for a place that has free parking
+searchProperties,do you have anything with air conditioning that’s rated as a great stay?
+searchProperties,show me options with a flexible booking policy and free parking
+searchProperties,are there any villas available from July 5 to 8?
+searchProperties,is there an apartment available between august 10 and 12?
+searchProperties,can I see houses that are rated as outstanding?
+searchProperties,I want something with wifi and pet friendly options
+searchProperties,anything with a pool and air conditioning?
+searchProperties,show me properties under 300 a night
+searchProperties,do you have anything between 150 and 250 per night?
+searchProperties,looking for a house with a great stay rating

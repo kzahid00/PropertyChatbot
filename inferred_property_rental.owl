@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/user-01/ontologies/2025/6/short-term-property-rental"
+         xmlns="http://www.semanticweb.org/user-01/ontologies/2025/6/short-term-property-rental#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/user-01/ontologies/2025/6/short-term-property-rental"/>
+
+<owl:ObjectProperty rdf:about="#hasAmenity">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#Amenity"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasBookingPolicy">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#BookingPolicy"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasGuestRating">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#GuestRating"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasHost">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#Host"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasLocation">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#Location"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasPropertyType">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#PropertyType"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#hasCapacity">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasCity">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Location"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasCountry">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Location"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasHostContact">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Host"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasHostName">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Host"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasNumberOfReviews">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPolicyDescription">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#BookingPolicy"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPrice">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPropertyName">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#isAvailableFrom">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#isAvailableTo">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Property"/>
+
+<owl:Class rdf:about="#Amenity">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#AirCon"/>
+        <rdf:Description rdf:about="#Parking"/>
+        <rdf:Description rdf:about="#PetFriendly"/>
+        <rdf:Description rdf:about="#Pool"/>
+        <rdf:Description rdf:about="#Wi-Fi"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#BookingPolicy">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Flexible"/>
+        <rdf:Description rdf:about="#Moderate"/>
+        <rdf:Description rdf:about="#Strict"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#GuestRating">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#BelowAverage"/>
+        <rdf:Description rdf:about="#DecentStay"/>
+        <rdf:Description rdf:about="#Disappointing"/>
+        <rdf:Description rdf:about="#GreatStay"/>
+        <rdf:Description rdf:about="#Outstanding"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#Host"/>
+
+<owl:Class rdf:about="#Location"/>
+
+<owl:Class rdf:about="#PropertyType">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Apartment"/>
+        <rdf:Description rdf:about="#Cabin"/>
+        <rdf:Description rdf:about="#House"/>
+        <rdf:Description rdf:about="#Villa"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#AirCon">
+  <rdf:type rdf:resource="#Amenity"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Parking">
+  <rdf:type rdf:resource="#Amenity"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PetFriendly">
+  <rdf:type rdf:resource="#Amenity"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pool">
+  <rdf:type rdf:resource="#Amenity"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wi-Fi">
+  <rdf:type rdf:resource="#Amenity"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Flexible">
+  <rdf:type rdf:resource="#BookingPolicy"/>
+  <hasPolicyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full refund up to 24 hours before check-in</hasPolicyDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Moderate">
+  <rdf:type rdf:resource="#BookingPolicy"/>
+  <hasPolicyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full refund 5 days before</hasPolicyDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Strict">
+  <rdf:type rdf:resource="#BookingPolicy"/>
+  <hasPolicyDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50% refund up to 7 days before</hasPolicyDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BelowAverage">
+  <rdf:type rdf:resource="#GuestRating"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DecentStay">
+  <rdf:type rdf:resource="#GuestRating"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Disappointing">
+  <rdf:type rdf:resource="#GuestRating"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GreatStay">
+  <rdf:type rdf:resource="#GuestRating"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Outstanding">
+  <rdf:type rdf:resource="#GuestRating"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Apartment">
+  <rdf:type rdf:resource="#PropertyType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cabin">
+  <rdf:type rdf:resource="#PropertyType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#House">
+  <rdf:type rdf:resource="#PropertyType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Villa">
+  <rdf:type rdf:resource="#PropertyType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hostMatt">
+  <rdf:type rdf:resource="#Host"/>
+  <hasHostContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">matt.host@staymate.com</hasHostContact>
+  <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matt</hasHostName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hostNadia">
+  <rdf:type rdf:resource="#Host"/>
+  <hasHostContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nadia.host@staymate.com</hasHostContact>
+  <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nadia</hasHostName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hostSara">
+  <rdf:type rdf:resource="#Host"/>
+  <hasHostContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sara.host@staymate.com</hasHostContact>
+  <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sara</hasHostName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hostTariq">
+  <rdf:type rdf:resource="#Host"/>
+  <hasHostContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tariq.host@staymate.com</hasHostContact>
+  <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tariq</hasHostName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hostZainab">
+  <rdf:type rdf:resource="#Host"/>
+  <hasHostContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zainab.host@staymate.com</hasHostContact>
+  <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zainab</hasHostName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locCasablanca">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morocco</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locChicago">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicago</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locGranada">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Granada</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locMelbourne">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melbourne</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australia</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locMunich">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Munich</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locOsaka">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osaka</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japan</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locPhoenix">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phoenix</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locSeattle">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seattle</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locSydney">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sydney</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australia</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#locTokyo">
+  <rdf:type rdf:resource="#Location"/>
+  <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tokyo</hasCity>
+  <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japan</hasCountry>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate1">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostMatt"/>
+  <hasLocation rdf:resource="#locSydney"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #1</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate10">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#Outstanding"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locGranada"/>
+  <hasPropertyType rdf:resource="#Villa"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">710</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #10</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate11">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostSara"/>
+  <hasLocation rdf:resource="#locCasablanca"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #11</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate12">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#GreatStay"/>
+  <hasHost rdf:resource="#hostNadia"/>
+  <hasLocation rdf:resource="#locPhoenix"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #12</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate13">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#GreatStay"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locOsaka"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #13</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate14">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#BelowAverage"/>
+  <hasHost rdf:resource="#hostMatt"/>
+  <hasLocation rdf:resource="#locChicago"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #14</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-12-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate15">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#Disappointing"/>
+  <hasHost rdf:resource="#hostTariq"/>
+  <hasLocation rdf:resource="#locCasablanca"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #15</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate16">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#GreatStay"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locOsaka"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #16</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-01T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate17">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostTariq"/>
+  <hasLocation rdf:resource="#locGranada"/>
+  <hasPropertyType rdf:resource="#Villa"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">810</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #17</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-10T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-20T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate18">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostSara"/>
+  <hasLocation rdf:resource="#locPhoenix"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #18</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-10T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-20T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate19">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#BelowAverage"/>
+  <hasHost rdf:resource="#hostNadia"/>
+  <hasLocation rdf:resource="#locMunich"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #19</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-10T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-12-20T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate2">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostNadia"/>
+  <hasLocation rdf:resource="#locMelbourne"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #2</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-20T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-12-30T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate20">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#Outstanding"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locGranada"/>
+  <hasPropertyType rdf:resource="#Villa"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #20</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-10T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-30T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate21">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#GreatStay"/>
+  <hasHost rdf:resource="#hostSara"/>
+  <hasLocation rdf:resource="#locChicago"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">430</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #21</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-10T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-10T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate22">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locMelbourne"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #22</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-10T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-10T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate23">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locCasablanca"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #23</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-30T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate24">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#Outstanding"/>
+  <hasHost rdf:resource="#hostTariq"/>
+  <hasLocation rdf:resource="#locTokyo"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #24</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-31T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate25">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostNadia"/>
+  <hasLocation rdf:resource="#locMunich"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #25</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-15T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate3">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostSara"/>
+  <hasLocation rdf:resource="#locSeattle"/>
+  <hasPropertyType rdf:resource="#Cabin"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #3</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-12-15T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate4">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#Outstanding"/>
+  <hasHost rdf:resource="#hostSara"/>
+  <hasLocation rdf:resource="#locSeattle"/>
+  <hasPropertyType rdf:resource="#Cabin"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #4</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-15T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate5">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Strict"/>
+  <hasGuestRating rdf:resource="#Outstanding"/>
+  <hasHost rdf:resource="#hostNadia"/>
+  <hasLocation rdf:resource="#locGranada"/>
+  <hasPropertyType rdf:resource="#Villa"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #5</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-15T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate6">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Moderate"/>
+  <hasGuestRating rdf:resource="#DecentStay"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locMelbourne"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #6</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-29T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate7">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#Disappointing"/>
+  <hasHost rdf:resource="#hostSara"/>
+  <hasLocation rdf:resource="#locPhoenix"/>
+  <hasPropertyType rdf:resource="#Villa"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">890</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #7</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-29T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate8">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#PetFriendly"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#Disappointing"/>
+  <hasHost rdf:resource="#hostZainab"/>
+  <hasLocation rdf:resource="#locChicago"/>
+  <hasPropertyType rdf:resource="#Apartment"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #8</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-29T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#staymate9">
+  <rdf:type rdf:resource="#Property"/>
+  <hasAmenity rdf:resource="#AirCon"/>
+  <hasAmenity rdf:resource="#Parking"/>
+  <hasAmenity rdf:resource="#Pool"/>
+  <hasAmenity rdf:resource="#Wi-Fi"/>
+  <hasBookingPolicy rdf:resource="#Flexible"/>
+  <hasGuestRating rdf:resource="#GreatStay"/>
+  <hasHost rdf:resource="#hostNadia"/>
+  <hasLocation rdf:resource="#locTokyo"/>
+  <hasPropertyType rdf:resource="#House"/>
+  <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasCapacity>
+  <hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasNumberOfReviews>
+  <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</hasPrice>
+  <hasPropertyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stay Mate #9</hasPropertyName>
+  <isAvailableFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-01T00:00:00</isAvailableFrom>
+  <isAvailableTo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-08-15T23:59:59</isAvailableTo>
+</owl:NamedIndividual>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Amenity"/>
+    <rdf:Description rdf:about="#BookingPolicy"/>
+    <rdf:Description rdf:about="#GuestRating"/>
+    <rdf:Description rdf:about="#Host"/>
+    <rdf:Description rdf:about="#Location"/>
+    <rdf:Description rdf:about="#Property"/>
+    <rdf:Description rdf:about="#PropertyType"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>
